@@ -1,4 +1,4 @@
-# Lab2: Accessibility-Web-Design
+# Lab2: Accessibility Web Design
 
 ## What accessibility enhancements were the most challenging to implement, and why?
 
