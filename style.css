@@ -9,6 +9,7 @@ html, body {
 body {
     min-width: 900px;
     line-height: 1.5;
+    color: #333333;
 }
 main {
     width: 900px;
@@ -68,10 +69,10 @@ a {
     margin-bottom: 30px;
 }
 .hero-image {
-    max-width: 450px;
+    max-width: 350px;
     position: absolute;
     right: -20px;
-    top: -100px;
+    top: -50px;
     z-index: -1;
 }
 .hero-link {
@@ -81,9 +82,89 @@ a {
     width: 100px;
 }
 
+/* Info Section */
+.info-section {
+    margin: 250px auto;
+    width: 800px;
+}
+.info {
+    margin-left: 200px;
+}
+.info-heading {
+    font-size: 48px;
+    margin: 0;
+}
+.info a {
+    color: #007000;
+    text-decoration: underline;
+}
+.statistics {
+    width: 620px;
+    width: 100%;
+    position: relative;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 30px;
+}
+.info-image {
+    position: absolute;
+    left: -30px;
+    top: -170px;
+    max-width: 200px;
+}
+.stat-heading {
+    color: #cccccc;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.stat-number {
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.stat p {
+    color: #ffffff;
+}
+
+/* About Section */
+.about-section {
+    background-color: rgba(255, 255, 255, 0.85);
+    background-blend-mode: lighten;
+    background-image: url(images/clouds.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 2px solid #333333;
+}
+.about-heading {
+    margin: 0;
+    font-size: 48px;
+}
+.about span {
+    color: #007000;
+}
+.about-link {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.about a {
+    border: 2px solid #333333;
+    padding: 8px 20px;
+    border-radius: 40px;
+}
+
 /* Footer */
 .footer {
     background-color: #333333;
+    margin-top: 100px;
 }
 .social-links {
     display: flex;
@@ -92,7 +173,7 @@ a {
     margin: 0 auto;
     padding: 20px 40px;
     width: 800px;
-    color: #007000;
+    color: #ffffff;
 }
 .social-links p {
     display: inline;
@@ -104,14 +185,4 @@ a {
 .social-link {
     display: flex;
     align-items: center;
-}
-.social-link ion-icon {
-    font-size: 24px;
-    color: #007000;
-}
-.social-link:hover ion-icon {
-    color: white;
-}
-.social-link:hover p {
-    color: white;
 }
