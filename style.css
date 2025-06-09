@@ -6,7 +6,7 @@ html, body {
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-body {
+body, .contact-input, .address-input, .radio-container p {
     min-width: 900px;
     line-height: 1.5;
     color: #333333;
@@ -19,8 +19,11 @@ a {
     color: inherit;
     text-decoration: none;
 }
+ul {
+    list-style-type: none;
+}
 .icon {
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 /* Navbar */
@@ -41,7 +44,7 @@ a {
 .nav-link {
     margin: 5px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 .nav-links {
     display: flex;
@@ -54,7 +57,7 @@ a {
     margin: 120px auto 200px;
 }
 .hero-heading {
-    font-size: 80px;
+    font-size: 5rem;
     font-weight: 700;
     margin: 0;
 }
@@ -64,7 +67,7 @@ a {
     line-height: 1;
 }
 .hero-text {
-    font-size: 20px;
+    font-size: 1.25rem;
     max-width: 300px;
     margin-bottom: 30px;
 }
@@ -84,14 +87,14 @@ a {
 
 /* Info Section */
 .info-section {
-    margin: 250px auto;
+    margin: 250px auto 200px;
     width: 800px;
 }
 .info {
     margin-left: 200px;
 }
 .info-heading {
-    font-size: 48px;
+    font-size: 3rem;
     margin: 0;
 }
 .info a {
@@ -116,12 +119,12 @@ a {
 }
 .stat-heading {
     color: #cccccc;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     margin-bottom: 0;
 }
 .stat-number {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 500;
     margin-top: 0;
     margin-bottom: 20px;
@@ -146,7 +149,7 @@ a {
 }
 .about-heading {
     margin: 0;
-    font-size: 48px;
+    font-size: 3rem;
 }
 .about span {
     color: #007000;
@@ -163,11 +166,11 @@ a {
 
 /* Sign Up Form */
 .form-heading {
-    font-size: 48px;
+    font-size: 3rem;
     margin: 0;
 }
 .form-intro {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 20px;
 }
 .form-section {
@@ -216,7 +219,7 @@ a {
 }
 .social-links p {
     display: inline;
-    font-size: 16px;
+    font-size: 1rem;
 }
 .social-links ion-icon {
     padding-right: 10px;
@@ -224,4 +227,153 @@ a {
 .social-link {
     display: flex;
     align-items: center;
+}
+.social-link a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.social-link a:hover {
+    color: #007000;
+}
+.footer-text {
+    text-align: center;
+    padding: 20px 0;
+    color: #ffffff;
+    font-size: 0.875rem;
+}
+.footer-text a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.footer-text a:hover {
+    color: #007000;
+}
+
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+.contact-form-section, .header {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin: 0 auto;
+}
+.header {
+    padding: 30px 30px 0;   
+}
+.header a {
+    text-decoration: underline;
+    color: #000000;
+    height: fit-content;
+}
+#homeLink:focus {
+    outline: 4px solid rgba(117, 170, 255, 0.5);
+}
+.contact-form-section {
+    padding: 0 30px 0;   
+}
+.contact-image {
+    width: 400px;
+    object-fit: contain;
+    margin-left: 60px;
+}
+.contact-form-heading {
+    font-size: 3rem;
+    margin: 0;
+}
+.contact-form-intro {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+.contact-input {
+    display: block;
+    width: 300px;
+    margin: 5px auto 15px;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    border: 2px solid #333333;
+}
+.contact-textarea {
+    max-width: 300px;
+    padding: 16px 20px;
+    border: 2px solid #333333;
+}
+.contact-input::-webkit-input-placeholder, .address-input::-webkit-input-placeholder {
+    color: #555555;
+}
+.contact-submit-button {
+    border: 2px solid #333333;
+    padding: 8px 20px;
+    border-radius: 40px;
+    margin: 10px auto 0;
+    min-width: 120px;
+}
+.contact-submit-button:hover {
+    background-color: #dddddd;
+    cursor: pointer;
+}
+.address {
+    display: flex;
+}
+.address-input {
+    width: 110px;
+    margin: 5px auto 10px;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    border: 2px solid #333333;
+}
+.postcode {
+    margin-left: 40px;
+}
+.contact-radio {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.radio-container p {
+    margin-bottom: 10px;
+}
+.city-select {
+    width: 150px;
+    margin: 5px auto 10px;
+    border-radius: 20px;
+    padding: 8px 10px;
+    font-size: 1rem;
+    border: 2px solid #333333;
+}
+.city-select:focus-visible {
+    outline: 3px solid #bbd5ff;
+}
+.submit-message {
+    padding: 0;
+    margin-bottom: 14px;
+    border: none;
+}
+
+.submit-message p {
+    margin: 0;
+    font-size: 1rem;
+    color: #007000;
+}
+.submit-message p.error {
+    color: #ff0000;
+}
+.submit-message p.success {
+    color: #007000;
+}
+.submit-message p.warning {
+    color: #ff9900;
+}
+.submit-message p.info {
+    color: #0000ff;
+}
+.submit-message p.hidden {
+    display: none;
+}
+.submit-message p.visible {
+    display: block;
 }
