@@ -79,21 +79,57 @@
         </section>
 
         <!-- Form section -->
-            <!-- Form section -->
-            <div id="main">
-            <!-- Form section -->
-            <div class="contact-form-section">
-                <form>
-                    <h2 class="contact-form-heading">Reach <span>Out</span></h2>
-                    <div class="contact-form-intro">Curious about something? Complete these fields and "get in touch", as you humans say. 🤙</div>
-                    <input class="contact-input" type="text" placeholder="Full name" />
-                    <input class="contact-input" type="text" placeholder="Email" />
-                    <textarea class="contact-textarea" rows="4" cols="50" placeholder="Your message..."></textarea>
-                    <button class="contact-submit-button" type="button" onclick="submitForm()">Done 🎉</button>
-                </form>
-                <img class="contact-image" src="images/connect.png" /> 
-            </div>
-        </div>
+        <section class="contact-form-section" aria-labelledby="contact-form-heading">
+            <form aria-describedby="contact-form-intro">
+                <h2 id="contact-form-heading" class="contact-form-heading">Reach <span>Out</span></h2>
+                <div id="contact-form-intro" class="contact-form-intro">
+                    Curious about something? Complete these fields and "get in touch", as you humans say. 🤙
+                </div>
+                <label for="contact-name">Full name</label>
+                <input 
+                    class="contact-input" 
+                    type="text" 
+                    id="contact-name" 
+                    name="name" 
+                    placeholder="Full name" 
+                    aria-required="true"
+                />
+
+                <label for="contact-email">Email</label>
+                <input 
+                    class="contact-input" 
+                    type="email" 
+                    id="contact-email" 
+                    name="email" 
+                    placeholder="Email" 
+                    aria-required="true"
+                />
+
+                <label for="contact-message">Your message</label>
+                <textarea 
+                    class="contact-textarea" 
+                    id="contact-message" 
+                    name="message" 
+                    rows="4" 
+                    cols="50" 
+                    placeholder="Your message..." 
+                    aria-required="true"
+                ></textarea>
+
+                <button 
+                    class="contact-submit-button" 
+                    type="submit" 
+                    aria-label="Submit contact form"
+                >
+                    Send Message
+                </button>
+            </form>
+            <img 
+                class="contact-image" 
+                src="images/connect.png" 
+                alt="Robot hand reaching out to a human hand" 
+            /> 
+        </section>
 
             <!-- Form section -->
             <section class="form-section">
